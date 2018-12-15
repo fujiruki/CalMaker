@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>計算機つくる</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom styles for this template -->
+		<style>
+			body {
+				padding-top: 54px;
+			}
+			@media (min-width: 992px) {
+				body {
+					padding-top: 56px;
+				}
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="#">Start Bootstrap</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+					<a class="nav-link" href="#">Home
+						<span class="sr-only">(current)</span>
+					</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="#">Services</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		</nav>
+
+		<!-- Page Content -->
+		<div id="container">
+			<div>
+				<h1>テキストから計算機を作るシステム</h1>
+				<p>このシステムを使うと、テキストファイルから自分専用の計算機を作ることができます。
+				</p>
+			</div>
+			<div><h2>元になるテキストの例</h2>
+				<p>計算機の元テキストと結果の例です。</p>
+
+				<div>
+					<form action="" method="post">
+						<div>
+							<label for="src-text">計算機のもとになるテキスト</label><br/>
+							<textarea id="src-text">
+								#一定幅の材料を等間隔に割り込むための計算機
+								input:l 全体寸法
+								input:w 材料の幅
+								input:n 材料の数
+								; これはコメント
+								; d: 等間隔に割った結果
+								d = (l-w*n) / (n+1)
+								output:d 均等割り込みした間隔
+							</textarea>
+						</div>
+						上のテキストから生成される計算機
+						<div>
+							<h2>一定幅の材料を等間隔に割り込むための計算機</h2>
+						</div>
+						<div>
+							<label for="input-l">全体寸法</label>
+							<input type="number" id="input-l">
+						</div>
+						<div>
+							<label for="input-w">材料の幅</label>
+							<input type="number" id="input-w">
+						</div>
+						<div>
+							<label for="input-n">材料の数</label>
+							<input type="number" id="input-n">
+						</div>
+						<div>
+							<label for="output-d">均等割り込みした間隔</label>
+							<input type="number" id="output-d" readonly>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div><h2>上のテキストから生成される電卓</h2>
+				<p>計算機の元になるテキストの例です。</p>
+
+				<div>
+					<form action="" method="post">
+						<div>
+							<label for="src-text">計算機のもとになるテキスト</label>
+							<textarea id="src-text"></textarea>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div><!-- /container -->
+
+
+		<!-- TemplateSampleCode
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
+					<p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
+					<ul class="list-unstyled">
+						<li>Bootstrap 4.0.0</li>
+						<li>jQuery 3.3.0</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		-->
+
+		<!-- Bootstrap core JavaScript -->
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+	</body>
+
+</html>
