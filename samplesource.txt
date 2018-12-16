@@ -1,0 +1,13 @@
+#面積を求める
+out
+in: h: 高さ
+in: w: 幅
+
+S = h * w;
+out: 面積: S
+
+# 期待するフォーム
+高さ: xxxxxx
+幅: xxxxxx
+[計算するボタン]
+面積S:xxxxx
